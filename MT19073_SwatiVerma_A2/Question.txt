@@ -1,0 +1,12 @@
+Students need to participate in Kaggle competition created for this assignment.
+Each student need to participate independently in this competition.
+This is not a group assignment. 
+Please create kaggle team by your roll-number (or admission number) so we can evaluate student based on score leaderboard of kaggle.
+Each sample have 60,483 features (RNA expression). 
+Students need to extract features and develop model using limited features (maximum feature should not be more than 100). 
+
+
+Final prediction/output, Python code and detail should be submitted as assignment (single zip file).
+Evaluation will be based performance (AUC of ROC curve) at Kaggle site and submitted python codes.
+You may join this competition using following url
+https://www.kaggle.com/t/99588a07aee44330b268755ee3ea3337 

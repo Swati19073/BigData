@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>Help</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme"><font color="#54C7D8">Menu</font></h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="/home" class="w3-bar-item w3-button">Home</a>
+  <a href="/intro" class="w3-bar-item w3-button">Introduction</a> 
+  <a href="/form" class="w3-bar-item w3-button">Form</a>
+ 
+  <a href="/help" class="w3-bar-item w3-button">Help</a>
+  <a href="/team" class="w3-bar-item w3-button">Our Team</a>
+</nav>
+
+<header class="w3-container  w3-padding " id="myHeader"  style="background-color:#54C7D8" >
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button " color="white" ></i> 
+  <div  class="w3-center" >
+  
+  <h1 class="w3-xxxlarge w3-animate-bottom" ><font color=white>Help</font></h1>
+</div>
+</header>
+
+<div style="padding:40px ">
+  	<br>
+  	<p align="justify"> Users can follow the given instructions while predicting thyroid disease:
+</p>
+<ol>
+	<li><b>T3:</b> <font align="justify">T3 or triiodothyronine is a type of hormone produced by thyroid which is mainly responsible for stabilizing blood pressure, body temperature and regulating heart rate. Users must enter the value of T3 between 0.0005-0.18.</font>
+	</li>
+	<li> <b>TT4:</b> <font align="justify">TT4 also known as levothyroxine is another type of hormones produced by thyroid which along with T3 regulates body temperature, metabolism and heart rate. Users can enter the value of TT4 between 0.002-0.6.</font></li>
+	<li> <b>TSH: </b><font align="justify">TSH stands for Thyroid Stimulating Hormone. Pituitary glands of the brain produce TSH which tells the thyroid to produce and release the thyroid hormones into your blood. Users can enter the value of TSH between 0.0-0.53.</font></li>
+	<li><b>T4U:</b><font align="justify"> Its value ranges from 0.002 to 0.6.</font></li>
+	<li><b>FTI:</b> <font align="justify">FTI stands for Free Thyroxine Index which is obtained by multiplying  (Total T4) times (T3 Uptake) to obtain an index. In the presence of abnormalities in plasma protein binding, the FTI indicator is considered as a reliable indicator of thyroid status.</font> </li>
+</ol>
+<br>
+<h2><center>Prediction Approach</center></h2>
+<br>
+<p align="justify"> For the prediction of thyroid Decision Tree Classifier is used in which the model is trained using the above 5 features by keeping the depth of the tree as 3. After performing normalization, the Decision Tree Classifier was able to predict thyroid with an accuracy of 97.22%.
+</p>
+<br>
+<h2><center>Output</center></h2>
+<br>
+<p align="justify"><center>The output obtained can be either 1, 2 or 3 representing normal, hyperthyroidism and hypothyroidism respectively.</center></p>
+
+
+
+  <script>
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "100%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>
+
+ 

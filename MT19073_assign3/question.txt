@@ -1,0 +1,6 @@
+Students need to participate in Kaggle competition created for this assignment. Each student need to participate independently in this competition. This is not a group assignment. Please create kaggle team by your roll-number (or admission number) so we can evaluate student based on score in private leaderboard of kaggle.  Please develop machine/deep learning models using python library TensorFlow, Karas, Pytorch. 
+
+Final prediction/output, Python code and detail should be submitted as assignment (single zip file). Please make sure prediction submitted at kaggle should be reproducible by your Python code.
+Evaluation will be based performance (AUC of ROC curve) at Kaggle (Private Leaderboard) site and submitted python codes.
+You may join this competition using following url
+https://www.kaggle.com/t/9995c70fc5eb42af9348d9f3e55cf07c

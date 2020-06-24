@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>Introduction</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme"><font color="#54C7D8">Menu</font></h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="/home" class="w3-bar-item w3-button">Home</a>
+  <a href="/intro" class="w3-bar-item w3-button">Introduction</a> 
+  <a href="/form" class="w3-bar-item w3-button">Form</a>
+  
+  <a href="/help" class="w3-bar-item w3-button">Help</a>
+  <a href="/team" class="w3-bar-item w3-button">Our Team</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container  w3-padding" id="myHeader" style="background-color:#54C7D8">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button "></i> 
+  <div class="w3-center" style="background-color:#54C7D8">
+  
+  <h1 class="w3-xxxlarge w3-animate-bottom"><font color="white">Introduction</font></h1>
+   <!--  <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN W3.CSS</button>
+    </div> -->
+  </div>
+  </header>
+  <div style="padding:40px ">
+  	<br>
+  	<p align="justify">One of the challenging tasks in the field of medicine is to diagnose the disease at the correct time. It helps doctors to provide better treatment to the patient.</p>
+  	
+  	
+  		<ul>
+<li>According to a study in Times of India, 1 in every 10 adults suffers from hypothyroidism in India.</li>
+<li>It is a chronic disease that creates disorder in the immune system and might give rise to many other diseases.</li>
+<li>This disorder primarily takes place at between the age of 17-54.</li>
+<li>More than half of the Indian population suffers from undiagnosed or misdiagnosed thyroid diseases. </li>
+<li>Women are seven times more likely to contract thyroid problems than men and nearly half of all women and a quarter of all men in India die with evidence of an inflamed thyroid.</li>
+</ul>
+<br>
+<p  align="justify">
+So prior diagnosis of thyroid is very important and beneficial for the betterment of human.
+</p>
+<br>
+<h2><center>Thyroid Disease</center></h2>
+<br>
+<p  align="justify">Thyroid is a butterfly-shaped gland, which is located at the bottom of the throat responsible for producing two active thyroid hormones, levothyroxine (abbreviated T4) and triiodothyronine
+(abbreviated T3) into the bloodstream as the principal hormones.</p>
+<p  align="justify">The main function of these hormones is to accelerate the human body metabolism, burn calories, protein, and restrict other hormonal glands when there is excessive secretion.
+These T3 and T4 are controlled by thyroid stimulating hormone (TSH) which is released by the brain. The pituitary gland acts like a thermostat to control the production of these hormones. When T3 and T4 are less in the bloodstream, then the pituitary gland releases more TSH and they are more, it controls the releasing of TSH.
+</p>
+
+<p  align="justify">
+Hypothyroidism and hyperthyroidism are a result of an imbalance of thyroid hormones. Deficiency of thyroid hormones is referred to as <b>Hypothyroidism</b> and too much production of thyroid hormones is called <b>Hyperthyroidism</b></p>
+
+<p  align="justify">
+Weight gain or failure to lose weight despite a proper weight loss regime, lethargy, reduced heart rate, increased cold sensitivity, numbness in hands, enlargement in the neck, dry skin and hair, could indicate hypothyroidism</p>
+<p  align="justify">Both types of conditions affect metabolism of the body. Hypothyroidism, in particular, causes a reduction in stroke volume and heart rate which further leads to lowered cardiac output along with a decrease in heart sounds. It also weakens the immunity of the body.
+</p>
+<p  align="justify">
+The important factors that are majorly responsible for the abnormal function of the thyroid gland and the improper secretion of thyroid hormones are infection, trauma and stress.</p>
+<br>
+<h2><center>Role of Data Mining</center></h2>
+<br>
+<p  align="justify">The symptoms of this disease often vary from person to person and are nonspecific, and if left untreated, they tend to worsen over time. Thus, a correct diagnosis for this disease becomes a topic of major concern.</p>
+<p  align="justify">Identifying the thyroid disorder from the laboratory test report is very complex and requires extensive knowledge and experience. Using machine learning techniques for this purpose eases the task of testing and makes it faster.</p>
+
+<p  align="justify">
+	Finding an accurate solution to this problem using data mining techniques will cause an immense decrease in misdiagnoses as it is capable of distinguishing between problems of the thyroid gland and other illnesses in the body as well as providing the ability to detect the disease before it forms into a more destructive anomaly.
+</p>
+
+</div>
+<script>
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "100%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>

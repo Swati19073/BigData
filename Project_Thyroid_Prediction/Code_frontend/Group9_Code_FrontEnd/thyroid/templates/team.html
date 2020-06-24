@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<title>The Team</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme"><font color="#54C7D8">Menu</font></h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="/home" class="w3-bar-item w3-button">Home</a>
+  <a href="/intro" class="w3-bar-item w3-button">Introduction</a> 
+  <a href="/form" class="w3-bar-item w3-button">Form</a>
+  
+  <a href="/help" class="w3-bar-item w3-button">Help</a>
+  <a href="/team" class="w3-bar-item w3-button">Our Team</a>
+</nav>
+
+
+<header class="w3-container  w3-padding " id="myHeader"  style="background-color:#54C7D8" >
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button " color="white" ></i> 
+  <div  class="w3-center" >
+  
+  <h1 class="w3-xxxlarge w3-animate-bottom" ><font color=white>The Team</font></h1>
+ 
+   <!--  <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN W3.CSS</button>
+    </div> -->
+  </div>
+</header>
+
+<style>
+	#main{
+  position:absolute;
+  width: 100%;
+  
+  border:1px solid black;
+  padding-left: 300px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+}
+#main > div{
+  float:left;
+  margin:10px;
+}
+
+	.card {
+
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+ 
+ 
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  text-align: center;
+
+
+
+}
+
+
+
+
+</style>
+<div id="main">
+ 
+
+  <div class="card">
+   <img src={{ url_for('static', filename='Anamitra.png') }}>
+ <!--  <img src="Anamitra.png"   alt="avatar" > -->
+  <div class="container" >
+    <h4><b>Anamitra Maji</b></h4> 
+    MT19112
+  </div>
+  </div>
+  
+
+  <div class="card">
+    <img src={{ url_for('static', filename='Pragya.png') }}>
+  	<!-- <img src="Pragya.png"   alt="avatar" > -->
+   <div class="container" >
+    <h4><b>Pragya Dara</b></h4> 
+    MT19126
+  </div>
+</div>
+
+  <div class="card">
+    <img src={{ url_for('static', filename='Sameeksha.png') }}>
+  	<!-- <img src="Sameeksha.png"   alt="avatar" > -->
+   <div class="container" >
+    <h4><b>Sameeksha Gupta</b></h4> 
+    MT19096
+  </div>
+</div>
+<div class="card">
+  <img src={{ url_for('static', filename='Swati.jpg') }}>
+  	<!-- <img src="Swati.JPG"   alt="avatar"> -->
+   <div class="container" >
+    <h4><b>Swati Verma</b></h4> 
+    MT19073
+  </div>
+</div>
+</div>
+
+<script>ß
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "100%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>
+
+
+ 
+
+ 

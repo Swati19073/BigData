@@ -1,0 +1,130 @@
+<html> 
+<title>Prediction Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme"><font color="#54C7D8">Menu</font></h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="/home" class="w3-bar-item w3-button">Home</a>
+  <a href="/intro" class="w3-bar-item w3-button">Introduction</a> 
+  <a href="/form" class="w3-bar-item w3-button">Form</a>
+ 
+  <a href="/help" class="w3-bar-item w3-button">Help</a>
+  <a href="/team" class="w3-bar-item w3-button">Our Team</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container  w3-padding" id="myHeader" style="background-color:#54C7D8">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button "></i> 
+  <div class="w3-center" style="background-color:#54C7D8">
+  
+  <h1 class="w3-xxxlarge w3-animate-bottom"><font color="white">Thyroid Prediction Form</font></h1>
+   <!--  <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN W3.CSS</button>
+    </div> -->
+  </div>
+  </header>
+<body> 
+  
+  
+<div style="margin-top: 80px"> 
+  <h4><center>Refer help page for guidance.</center></h4>
+  <form name="InputForm" action="/result" onsubmit="return validation()" method="POST" > <center>
+    <p>T3 <input type="text" size=15 name="t3"></p>
+    <p>TT4 <input type="text" size=15 name="tt4"></p>
+    <p>TSH <input type="text" size=15 name="tsh"></p>
+    <p>T4U <input type="text" size=15 name="t4u"></p>
+    <p>FTI <input type="text" size=15 name="fti"></p>
+      
+    </select> 
+    <br> 
+    
+    <input type="submit" value="Submit"> 
+  </center>
+  </form> 
+</div> 
+<script>
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "100%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function validation() {
+var t3=document.forms["InputForm"]["t3"];
+var tsh=document.forms["InputForm"]["tsh"];
+var t4u=document.forms["InputForm"]["t4u"];
+var tt4=document.forms["InputForm"]["tt4"];
+var fti=document.forms["InputForm"]["fti"];
+
+if(t3.value == "")
+{
+  window.alert("Please enter T3 value.");
+  t3.focus();
+}
+if(tt4.value == "")
+{
+  window.alert("Please enter TT4 value.");
+  tt4.focus();
+}
+if(tsh.value == "")
+{
+  window.alert("Please enter TSH value.");
+  tsh.focus();
+}
+
+if(t4u.value == "")
+{
+  window.alert("Please enter T4U value.");
+  t4u.focus();
+}
+if(fti.value == "")
+{
+  window.alert("Please enter FTI value.");
+  fti.focus();
+}
+if(isNaN(t3.value))
+{
+  window.alert("T3 must be a number.");
+  t3.focus();
+
+}
+if(isNaN(tt4.value))
+{
+  window.alert("TT4 must be a number.");
+  tt4.focus();
+}
+if(isNaN(tsh.value))
+{
+  window.alert("TSH must be a number.");
+  tsh.focus();
+}
+
+if(isNaN(t4u.value))
+{
+  window.alert("T4U must be a number.");
+  t4u.focus();
+}
+if(isNaN(fti.value))
+{
+  window.alert("FTI must be a number.");
+  fti.focus();
+}
+ 
+  }
+
+</script>
+</body> 
+</html> 

@@ -1,0 +1,6 @@
+ ID	Profiling Technique	Dataset ID	No of Samples	Type of Samples	Pubmed ID
+ID1	Affymetrix Array	GSE45050	16	HCC , Cirrhosis and adjacent non-tumor	24497316
+ID2	Affymetrix Array	GSE45267	87	48 primary HCC samples, as well as those of 39 non-cancerous tissues, from 61 patients	30411085
+ID3	Affymetrix Array	GSE45434	16	HCC	NA
+ID4	Affymetrix Array	GSE45435	31	HCC	NA
+ID5	Affymetrix Array	GSE51401	64	Primary uncultured CD31+ and CD105+ tumor endothelial cells (TEC), non-tumor endothelial cells (NEC) ,remnant cells from tumor (TC) and non-tumor liver tissue (NTC)of HCC	NA
